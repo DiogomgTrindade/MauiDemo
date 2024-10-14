@@ -11,7 +11,7 @@
             navPage.BarBackground = Colors.Yellow;
             navPage.BarTextColor = Colors.Blue;
 
-            MainPage = new NavigationPage(new GridLayoutDemo());
+            MainPage = new NavigationPage(new AbsoluteLayoutDemo());
         }
     }
 }

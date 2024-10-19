@@ -1,4 +1,6 @@
-﻿namespace MauiControls
+﻿using MauiControls.Models;
+
+namespace MauiControls
 {
     public partial class MainPage : ContentPage
     {
@@ -9,17 +11,47 @@
             InitializeComponent();
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
-        {
-            count++;
+        //private void OnCounterClicked(object sender, EventArgs e)
+        //{
+        //    var produto = new Produto
+        //    {
+        //        Nome = "Iphone 5",
+        //        Preco = 5000.00m,
+        //        Estoque = 5
+        //    };
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
+        //    //Binding produtoBinding = new Binding();
+        //    //produtoBinding.Source = produto;
+        //    //produtoBinding.Path = "Nome";
 
-            SemanticScreenReader.Announce(CounterBtn.Text);
-        }
+
+        //    //lblNome.SetBinding(Label.TextProperty, produtoBinding);
+
+        //    Binding nomeBinding = new Binding
+        //    {
+        //        Source = produto,
+        //        Path = "Nome",
+        //        StringFormat = "Produto: {0}"
+        //    };
+        //    lblNome.SetBinding(Label.TextProperty, nomeBinding);
+
+        //    Binding precoBinding = new Binding
+        //    {
+        //        Source = produto,
+        //        Path = "Preco",
+        //        StringFormat = "Preço: {0}"
+        //    };
+        //    lblPreco.SetBinding(Label.TextProperty, precoBinding);
+
+        //    Binding estoqueBinding = new Binding
+        //    {
+        //        Source = produto,
+        //        Path = "Estoque",
+        //        StringFormat = "Estoque: {0}"
+        //    };
+        //    lblEstoque.SetBinding(Label.TextProperty, estoqueBinding);
+
+        //}
     }
 
 }

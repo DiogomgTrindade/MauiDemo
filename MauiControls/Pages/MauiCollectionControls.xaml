@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiControls.Pages.MauiCollectionControls"
+             Title="Maui Collection Controls">
+
+
+        <VerticalStackLayout>
+
+        <TableView>
+            <TableRoot>
+                <TableSection Title="Acessórios">
+                    <SwitchCell Text="Ar condicionado digital"
+                                On="True"></SwitchCell>
+                    <SwitchCell Text="Alarme Perimétrico"></SwitchCell>
+                    <SwitchCell Text="Direção Eletro Hidráulica"></SwitchCell>
+                    <SwitchCell x:Name="AlertaCinto"
+                                OnChanged="AlertaCinto_OnChanged"
+                                Text="Alerta Cinto de Segurança"></SwitchCell>
+                    <TextCell Text="Valor Total: 65.900,00"
+                                TextColor="Black"></TextCell>
+                    <EntryCell Placeholder="Informe o seu nome"></EntryCell>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+        <Button x:Name="btnProximo" Text="Avançar"
+                    VerticalOptions="End"></Button>
+
+
+    </VerticalStackLayout>
+
+
+
+</ContentPage>

@@ -78,6 +78,9 @@
 	  <MauiXaml Update="Pages\BindingModes.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Pages\DividirAConta.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Pages\JogoDaForca.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

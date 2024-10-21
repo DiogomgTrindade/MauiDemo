@@ -13,6 +13,9 @@ namespace MauiControls
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    fonts.AddFont("Robus-BWqOd.otf", "MinhaFonte");
+                    fonts.AddFont("fontello.ttf", "IconsFont");
+
                 });
 
 #if DEBUG

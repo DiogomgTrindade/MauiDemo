@@ -8,7 +8,7 @@ namespace MauiControls
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new  NotifyBinding());
+            MainPage = new NavigationPage(new  JogoDaForca());
         }
     }
 }

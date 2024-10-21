@@ -55,6 +55,13 @@
 	  <None Remove="Resources\Images\galaxia3.jpg" />
 	  <None Remove="Resources\Images\galaxia4.jpg" />
 	  <None Remove="Resources\Images\galaxia5.jpg" />
+	  <None Remove="Resources\Images\img0.jpg" />
+	  <None Remove="Resources\Images\img1.jpg" />
+	  <None Remove="Resources\Images\img2.jpg" />
+	  <None Remove="Resources\Images\img3.jpg" />
+	  <None Remove="Resources\Images\img4.jpg" />
+	  <None Remove="Resources\Images\img5.jpg" />
+	  <None Remove="Resources\Images\img6.jpg" />
 	  <None Remove="Resources\Images\portugal.jpg" />
 	</ItemGroup>
 
@@ -64,6 +71,9 @@
 
 	<ItemGroup>
 	  <MauiXaml Update="Pages\BindingModes.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\JogoDaForca.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Pages\MauiCollectionControls.xaml">

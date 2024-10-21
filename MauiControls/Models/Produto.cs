@@ -1,17 +1,60 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace MauiControls.Models
 {
-    public class Produto
+    public class Produto : INotifyPropertyChanged
     {
-        public string Nome { get; set; }
+        private string nome;
+        private decimal preco;
+        private int estoque;
 
-        public decimal Preco { get; set; }
 
-        public int Estoque { get; set; }
+
+        public string Nome
+        {
+            get => nome;
+            set
+            {
+                nome = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public decimal Preco
+        {
+            get => preco;
+            set
+            {
+                preco = value;  
+                OnPropertyChanged();
+            }
+        }
+
+        public int Estoque
+        {
+            get => estoque;
+            set
+            {
+                estoque = value;
+                OnPropertyChanged();
+            }
+        }
+
+
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected void OnPropertyChanged([CallerMemberName]
+        string propName = null)
+        {
+            PropertyChanged?.Invoke(this,
+                new PropertyChangedEventArgs(propName));
+        }
     }
 }
